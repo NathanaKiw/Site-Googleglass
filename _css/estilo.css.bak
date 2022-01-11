@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+		p{
+			text-align: justify;
+			text-ident: 50px;
+		}
+		body{
+			background-color: white;
+			color: rgba(0,0,0,1);
+		}
+		
+/* Formatação de imagens com legendas*/
+
+	figure.foto-legenda{
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+		
+	}
+	figure.foto-legenda img{
+		width: 100%;
+		height: 100%;
+	}
+	figure.foto-legenda figcaption{
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0,0,0,.4); /*fundo translúcido*/
+		color: white;
+		width: 100%; /*width e height deixam a legenda flutuando em um fundo translúcido*/
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box; /*cria um box dentro da borda*/
+		transition: opacity 1s; /*qual o elemento que queremos a transição e o tempo para a transição*/
+	}
+	figure.foto-legenda:hover figcaption{
+		opacity:1; /*Quando o mouse passa em cima da foto mostra a legenda da foto*/
+	}
+	
+	/*Formatação do Menu*/
+	
+	nav.menu ul{
+		list-style: none;
+		text-transform: uppercase;
+		
+	}

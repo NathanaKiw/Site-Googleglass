@@ -203,6 +203,13 @@ aside#lateral h2 {
   color: #ffffff;
   padding: 5px;
 }
+video#video-1 {
+  width: 490px;
+  margin-left: 5px;
+}
+video#video-2 {
+  width: 365px;
+}
 footer#rodape {
   clear: both;
   border-top: 1px solid #606060;
